@@ -1,6 +1,7 @@
 body{
-	/*background-image: url('../images/namestamp.png');
+	background-image: url('../images/sitetestbg.jpg');
 	background-position: center;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;*/
 }
@@ -20,22 +21,27 @@ h3{
 }
 
 .wrapper{
-	height: 100%;
+	height: auto;
 	width: 100%;
 	border: 10px solid;
 }
+
+
 
 .navtoggle {
 	margin: 2%;
 	right: 1%;
 	position: fixed;
-	z-index: 20;
+	z-index: 200;
+	display: none;
 
 }
 
+
 span.glyphicon-align-justify{
 	font-size: 30px;
-	display: none;
+	/*display: none;*/
+	color: white;
 }
 
 .col-lg-8{
@@ -113,6 +119,24 @@ span.glyphicon-align-justify{
 	width: 75px;
 	height: 75px;
 
+}
+
+.container{
+	width: 100%;
+	
+}
+
+.black-transparent{
+	background-color: black;
+	opacity: .6;
+	color: rgba(255,255,255,  1);
+}
+
+.jumbotron{
+	background-color: inherit;
+	color: rgba(255,255,255,  1);
+	height: 100%;
+	padding-top: 18%;
 }
 
 

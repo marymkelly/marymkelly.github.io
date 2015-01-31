@@ -2,7 +2,7 @@
 
 
 
-$(document).ready(function(){
+/*$(document).ready(function(){
 	$(".glyphicon-align-justify").addClass("clicked");
 	});
     $(".wrapper").hover(function(){
@@ -11,5 +11,5 @@ $(document).ready(function(){
             $(".col-lg-8").fadeIn(1300);
             $(".te").fadeTo(800, 1);
         });
-    });
+    });*/
 
