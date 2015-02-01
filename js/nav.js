@@ -5,7 +5,7 @@ $(document).ready(function(){
     $(document).ready(function(){
     $(".glyphicon-align-justify").click(function(){
         if($(".glyphicon-align-justify").hasClass("clicked")){
-        $(".nav").animate({right:'0%'}, {duration: 600})
+        $(".nav").fadeIn()
         $(".navtoggle").animate({right:'20%'}, {duration: 600})
         $(".glyphicon-align-justify").removeClass("clicked");
     }else {
@@ -27,4 +27,4 @@ $(document).ready(function(){
         $(".navtoggle").animate({right:'1%'}, {duration: 400})
     });
     });
-    });*/
+    });*//

@@ -32,9 +32,8 @@ h3{
 	margin: 2%;
 	right: 1%;
 	position: fixed;
+	/*display: none;*/
 	z-index: 200;
-	display: none;
-
 }
 
 
@@ -42,6 +41,16 @@ span.glyphicon-align-justify{
 	font-size: 30px;
 	/*display: none;*/
 	color: white;
+		z-index: 200;
+}
+
+span.glypicon-chevron-up{
+	font-size: 50px;
+	color: white;
+}
+
+span.glyphicon-chevron-up:hover{
+	color: red;
 }
 
 .col-lg-8{
@@ -52,72 +61,58 @@ span.glyphicon-align-justify{
 }
 
 .nav{
-	background-color: black;
-	top: 0;
-	border: 10px solid;
-	border-right: none;
-	height: 100%;
-	width: 20%;
-	right: -20%;
+	background-color: white;
+	top: 2%;
+	height: auto;
+	width: 15%;
 	z-index: 10;
 	position: fixed;
+	opacity: .8;
+	right: 1%;
+	display: none;
+	border: 2px solid;
+	padding-right: 1%;
 }
 
 .nav ul{
 		text-align: center;
 		list-style-type: none;
-		color: gray;
+		color: black;
+		margin-right: 10%;
 }
 
 .nav li{
-		border-bottom: 1px gray solid;
-		border-bottom-style: groove;
-		border-bottom-left: 10px;
-		right: 20px;
+
 }
 
 .nav li a{
-	color: white;
+	color: black;
 	text-decoration: none;
 }
 
 .nav li a:hover{
-	color: gray;
+	color: red;
 }
 
 .github{
-	background-image: url("../images/github-logo.png");
+	/*background-image: url("../images/github-logo.png");
 	background-position: center;
-	background-size: cover;
-	width: 75px;
-	height: 75px;
-
-
+	background-size: cover;*/
+	
 }
 
 .github:hover{
-	background-image: url("../images/github-logo-red.png");
+	/*background-image: url("../images/github-logo-red.png");
 	background-position: center;
-	background-size: cover;
-	width: 75px;
-	height: 75px;
+	background-size: cover;*/
+
 
 }
 
 .linkedin{
-	background-image: url("../images/linkedin-logo.png");
+	/*background-image: url("../images/linkedin-logo.png");
 	background-position: center;
-	background-size: cover;
-	width: 75px;
-	height: 75px;
-}
-
-.linkedin:hover{
-	background-image: url("../images/linkedin-logo-red.png");
-	background-position: center;
-	background-size: cover;
-	width: 75px;
-	height: 75px;
+	background-size: cover;*/
 
 }
 
@@ -135,8 +130,38 @@ span.glyphicon-align-justify{
 .jumbotron{
 	background-color: inherit;
 	color: rgba(255,255,255,  1);
-	height: 100%;
 	padding-top: 18%;
 }
 
+.dark-gray{
+	background-color: #2b2b2b;
+	color: white;
+	padding: 6%;
+}
+
+.scrolltop {
+	margin: 2%;
+	right: 1%;
+	bottom: 1%;
+	position: fixed;
+	z-index: 200;
+	display: none;
+}
+
+.example{
+	width: 80%;
+	background-color: gray;
+}
+
+.c-all:hover{
+	color:black;
+}
+
+.cweb:hover{
+	color:black;
+}
+
+.cdesign:hover{
+	color: black;
+}
 
