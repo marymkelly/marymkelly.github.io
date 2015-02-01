@@ -40,8 +40,9 @@ h3{
 span.glyphicon-align-justify{
 	font-size: 30px;
 	/*display: none;*/
-	color: white;
-		z-index: 200;
+	color: #ae0000;
+	z-index: 200;
+	opacity: .7;
 }
 
 span.glypicon-chevron-up{
@@ -91,29 +92,7 @@ span.glyphicon-chevron-up:hover{
 }
 
 .nav li a:hover{
-	color: red;
-}
-
-.github{
-	/*background-image: url("../images/github-logo.png");
-	background-position: center;
-	background-size: cover;*/
-	
-}
-
-.github:hover{
-	/*background-image: url("../images/github-logo-red.png");
-	background-position: center;
-	background-size: cover;*/
-
-
-}
-
-.linkedin{
-	/*background-image: url("../images/linkedin-logo.png");
-	background-position: center;
-	background-size: cover;*/
-
+	color: #ae0000;
 }
 
 .container{
@@ -150,7 +129,6 @@ span.glyphicon-chevron-up:hover{
 
 .example{
 	width: 80%;
-	background-color: gray;
 }
 
 .c-all:hover{

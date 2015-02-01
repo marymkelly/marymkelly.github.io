@@ -12,9 +12,9 @@
 
 <style>
 .test{
-opacity: .2;
-top:35%;
+top:2%;
 position:fixed;
+left:1%;
 }
 
 .te{
@@ -50,6 +50,10 @@ position:fixed;
     height: 60%;
 }
 
+.iexample img{
+    width: 85.4%;
+}
+
 .cweb{
     display: hidden;
 }
@@ -66,86 +70,165 @@ position:fixed;
 }
 .folio-co-icon img{
     width: 80%;
-    padding-top: 15%;
-
 }
 
 .folio-caption{
-    padding-top: 45%;
+    padding-top: 25%;
+    padding-bottom: 22%;
+    background-color:#252525;
+    opacity: .6;
+    color: rgba(255,255,255,1);
+}
+
+.copyright{
+    left:48%;
     color: white;
 }
 
+.github:hover .fa-github{
+    transition: 0.9s;
+    transform: rotateY(360deg);
+    color: #ae0000;
+}
+
+.linkedin:hover .fa-linkedin{
+    transition: 0.9s;
+    transform: rotateY(360deg);
+    color: #ae0000;
+}
+
+.fa-github, .fa-linkedin{
+    color: white;
+}
+
+.oops {
+    display: hidden;
+    color: #252525;
+}
+
+/*.iexample:hover img{
+    transition: 2s;
+    opacity: .5;
+}
+
+.iexample:hover{
+    transition: 5s;
+    transition-timing-function: linear;
+    -webkit-animation: myfirst 5s;
+}
+
+
+
+@-webkit-keyframes myfirst {
+    from {background: none;}
+    to {background: yellow;}
+}*/
+
+/*.iexample:hover{
+    transition: 0.9s;
+    transform: rotateY(360deg);
+    color: #ae0000;
+    -webkit-animation: mysecond 1s;
+}
+
+@-webkit-keyframes mysecond {
+    from {background-image: url('images/2.png');}
+    to {background-image: url('images/1.png');}
+}*/
 </style>
 
 
 
 <body>
+
 <div class="wrapper" align="center">
 	<div class="navtoggle"><span class="glyphicon glyphicon-align-justify"></span></div>
-<div class="nav">
-	<ul><h1 style="color:black">Menu</h1>
-	<li><a href="index.html"><h3> Home </a></li>
-	<li><a href="#about"><h3> About </a></li>
-	<li><a href="#porfolio"><h3> Portfolio </a></li>
-	<li><a href="#resume"><h3> Resume </a></li>
-</div>
-
-<div class="container black-transparent">
-	<div class="jumbotron" style="height:100%;">
-		<h1 style="font-size:150px"> Mary Kelly </h1>
-		<h3> Front-End Web Developer & aspiring Graphic Designer</h3> <br>
-        Site Currently in Progress; Certain links disabled. <br>
-        Check back for updates!
-</div>
-
-</div>
-<div class="container" style="background-color:#cccccc; padding:6%"></a><h1 style="font-size:60px"> About </h1>
-</div>
-
-<div class="container" style="background-color:white; padding:0%;"><h1 style="font-size:60px"> Portfolio </h1>
-    <div class="jumbotron" style="margin-bottom:0;padding:0%;">
-    <div class="row"  style="margin-bottom:3%; padding-left:7%">
-    <h3 style="color:gray"><div class="col-md-1 col-md-offset-4 c-all" style="color:black">All</div><div class="col-md-1 cweb">Websites</div><div class="col-md-1 cdesign"> Design</div></h3>
+    <div class="nav">
+	   <ul><h1 style="color:black">Menu</h1>
+	   <li><a href="index.html"><h3> Home </a></li>
+	   <li><a href="#about"><h3> About </a></li>
+	   <li><a href="#portfolio"><h3> Portfolio </a></li>
+       <li><a href="#contact"><h3> Contact </a></li>
+	   <li><a href="#resume"><h3> Resume </a></li>
     </div>
 
-
-    <div class="row" style="margin-bottom:3%;"><h3>
-
-    <div class="col-md-4 example web" style="color:black; background-color:white">
-        <div class="iexample" style="background-image:url('images/1.png'); background-size:cover; opacity:.8;">
-            <div class="folio-co-icon"><!--<img src="images/student-opportunity-center.png">--></div>
-            <div class="folio-caption">Coming Soon</div>
+    <div class="container black-transparent">
+	   <div class="jumbotron" style="height:100%;">
+		  <h1 style="font-size:150px"> Mary Kelly </h1>
+		  <h3> Front-End Web Developer & aspiring Graphic Designer</h3> <br>
+            Site Currently in Progress; Certain links disabled. <br>
+            Check back for updates!
         </div>
     </div>
-
-    <div class="col-md-4 example web" style="color:black; background-color:white">
-        <div class="iexample" style="background-image:url('images/2.png'); background-size:cover; opacity:.8;">
-            <div class="folio-co-icon"><!--<img src="images/student-opportunity-center.png">--></div>
-            <div class="folio-caption">Coming Soon</div>
+    <a name="about"></a>
+    <div class="container" style="background-color:#cccccc; padding:6%"></a><h1 style="font-size:60px; margin-bottom: 4%"> About </h1>
+       <!-- <div class="row" style="margin-bottom:3%">
+            <div class="col-md-6"><h2> Who I am </h2></div><div class="col-md-6">  Stuff about who I am</div>  
         </div>
+        <div class="row">
+            <div class="col-md-6"><h2> What I do </h2></div><div class="col-md-6">  Stuff about what I do</div>  
+        </div>-->
     </div>
+    <a name="portfolio"></a>
+    <div class="container" style="background-color:white; padding:0%; padding-top:3%"><h1 style="font-size:60px"> Portfolio </h1>
+        <div class="jumbotron" style="margin-bottom:0;padding:0%;">
+        <div class="row"  style="margin-bottom:3%; padding-left:7%">
+        <h3 style="color:gray">
+            <div class="col-md-1 col-md-offset-4 c-all" style="color:black">All</div>
+            <div class="col-md-1 cweb">Web</div>
+            <div class="col-md-1 cdesign"> Design</div></h3>
+        </div>
+
+        <div class="row" style="margin-bottom:3%;"><h3>
+            <div class="col-md-4 example web" style="color:black;">
+                <div class="iexample" style="background-image:url('images/sochome.png'); background-size:cover; opacity:.8;">
+                   <div class="folio-caption 1"> <h1>Student Opportunity Center</h1><br>
+                    <h5> Current Employer | Front-End Development | Design</div>
+                </div>
+            </div>
+
+            <div class="col-md-4 example web" style="color:black; background-color:white">
+                <div class="iexample" style="background-image:url('images/2.png'); background-size:cover; opacity:.8;">
+                    <div class="folio-caption 2"><h1 style="margin-bottom:13%">Harrison Bail Bonds</h1><br>
+                        <h4> Current Project </h4>
+                        <h5> Freelance | Landing Page | Web Development & Design </h5></div>
+                </div>
+            </div>
     
-    <div class="col-md-4 example design" style="color:black; background-color:white">
-        <div class="iexample" style="background-image:url('images/3.png'); background-size:cover; opacity:.8;">
-            <div class="folio-co-icon"></div>
-            <div class="folio-caption">Coming Soon</div>
+            <div class="col-md-4 example web" style="color:black; background-color:white">
+                <div class="iexample" style="background-image:url('images/3.png'); background-size:cover; opacity:.8;">
+                    <div class="folio-caption 3"><h1 style="margin-bottom:13%">Go Green Innovations</h1><br>
+                        <h4>Current Project</h4>
+                        <h5>Freelance | Website | Web Development & Design</h5></div>
+                </div>
+            </div>
+
+            <div class="col-md-4 example design" style="color:black;">
+                <div class="iexample" style="background-image:url('images/lightbulb.png'); background-size:cover; opacity:.8;">
+                   <div class="folio-caption 4"> <h1>Student Opportunity Center</h1><br>
+                    <h5> Current Employer | Graphic Design </div>
+                </div>
+            </div>
+            <!--<div class="col-md-6 oops" align="center" style="padding-bottom:10%"><h2> <img src="images/lightbulb.png"></div>-->
+
+        </div>  
+        
         </div>
     </div>
-</div>  
-</div>
-</div>
-
-<div class="container dark-gray"><h1 style="font-size:70px"> Contact</h1>
-	<div class="scrolltop"><span class="glyphicon glyphicon-chevron-up"></div>
-	<div class="contact">
-	<h3> mk-km@live.com </h3></div>
-	<div class= "row" style="padding-top: 20px">
-	<div class="col-md-2 col-md-offset-4 github">
-	<a href="https://github.com/marymkelly" title="Mary Kelly Github Account"><span class="fa fa-github-square fa-4x" style="color:white"></span></a>
-	</div>
-	<div class="col-md-2 linkedin" style="margin-left:1%">
-	<a href="http://www.linkedin.com/pub/mary-kelly/ab/b6/504/" title="Mary Kelly LinkedIn Account"><span class="fa fa-linkedin-square fa-4x" style="color:white"></span></a>
-	</div></div>
+    <a name="contact"></a>
+    <div class="container dark-gray" style="padding-bottom:0%">
+        <h1 style="font-size:70px">Contact</h1>
+	   <div class="scrolltop"><span class="glyphicon glyphicon-chevron-up"></div>
+	   <div class="contact"><h3> mk-km@live.com </h3></div>
+	   <div class= "row" style="padding-top: 20px">
+	       <div class="col-md-2 col-md-offset-4 github">
+	           <a href="https://github.com/marymkelly" title="Mary Kelly Github Account"><span class="fa fa-github fa-4x"></span></a>
+	       </div>
+	       <div class="col-md-2 linkedin" style="margin-left:1%">
+	           <a href="http://www.linkedin.com/pub/mary-kelly/ab/b6/504/" title="Mary Kelly LinkedIn Account"><span class="fa fa-linkedin fa-4x"></span></a>
+	       </div>
+       </div>
+       <div class="copyright dark-gray" style="font-size:10px;"><span class="fa fa-copyright"></span>&nbsp;2015 Mary Kelly</div>
 	</div>
 </div>
 </body>
@@ -161,7 +244,9 @@ position:fixed;
 
 <script type="text/javascript">
 $(".glyphicon-align-justify").addClass("clicked");
-    $(document).ready(function(){                  
+    $(document).ready(function(){  
+
+    $(".oops").hide()                
         /*$(window).scroll(function(){                          
             if ($(this).scrollTop() > 800) {
                 $('.navtoggle').fadeIn(500);
@@ -192,16 +277,18 @@ $(".glyphicon-align-justify").addClass("clicked");
     });
 
            $(".c-all").click(function(){
-            $(".web").show()
-            $(".design").show()
+            $(".web").show('slide', 500)
+            $(".design").show('slide', 500)
+            $(".oops").hide()
             $('.c-all').css({'color':'black'})
             $('.cweb').css({'color':'gray'})
             $('.cdesign').css({'color':'gray'})
         });
 
         $(".cweb").click(function(){
-            $(".web").show()
-            $(".design").hide()
+            $(".web").show('slide')
+            $(".design").hide('slide')
+            $(".oops").hide()
             $('.cweb').css({'color':'black'})
             $('.c-all').css({'color':'gray'})
             $('.cdesign').css({'color':'gray'})
@@ -209,13 +296,49 @@ $(".glyphicon-align-justify").addClass("clicked");
         });
 
         $(".cdesign").click(function(){
-            $(".web").hide()
-            $(".design").show()
+            $(".web").hide('slide')
+            $(".design").delay(200).show('slide')
             $('.cdesign').css({'color':'black'})
             $('.c-all').css({'color':'gray'})
             $('.cweb').css({'color':'gray'})
         });
     });
+
+        $(".1").hover(
+            function(){
+            $(this).animate({'opacity':'.8', 'background-color':'red'})},
+
+            function(){
+            $(this).animate({'opacity':'.6', 'background-color':'black'})
+        });
+
+        $(".2").hover(
+            function(){
+            $(this).animate({'opacity':'.8', 'background-color':'blue'})},
+
+            function(){
+            $(this).animate({'opacity':'.6', 'background-color':'black'})
+        });
+
+        $(".3").hover(
+            function(){
+            $(this).animate({'opacity':'.8', 'background-color':'green'})},
+
+            function(){
+            $(this).animate({'opacity':'.6', 'background-color':'black'})
+        });
+
+         $(".4").hover(
+            function(){
+            $(this).animate({'opacity':'.8','color':'black', 'background-color':'yellow'})},
+
+            function(){
+            $(this).animate({'opacity':'.6','color':'white', 'background-color':'black'})
+        });
+
+            $(".4").click(function(){
+            $('.oops').slideToggle('slide');
+        });
 
 
 $('.scrolltop').click(function() {
@@ -226,7 +349,12 @@ $('.scrolltop').click(function() {
     }
 });
 
-     
+$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $($(this).attr('href')).offset().top
+    }, 800);
+    return false;
+});
 
 
 </script>
