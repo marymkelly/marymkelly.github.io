@@ -140,18 +140,17 @@ left:1%;
 
 
 <body>
-
+<a name="home"></a>
 <div class="wrapper" align="center">
 	<div class="navtoggle"><span class="glyphicon glyphicon-align-justify"></span></div>
     <div class="nav">
 	   <ul><h1 style="color:black">Menu</h1>
-	   <li><a href="index.html"><h3> Home </a></li>
+	   <li><a href="#home"><h3> Home </a></li>
 	   <li><a href="#about"><h3> About </a></li>
 	   <li><a href="#portfolio"><h3> Portfolio </a></li>
        <li><a href="#contact"><h3> Contact </a></li>
 	  <!-- <li><a href="#resume"><h3> Resume </a></li>-->
     </div>
-
     <div class="container black-transparent">
 	   <div class="jumbotron" style="height:100%;">
 		  <h1 style="font-size:150px"> Mary Kelly </h1>
@@ -182,14 +181,14 @@ left:1%;
         <div class="row" style="margin-bottom:3%;"><h3>
             <div class="col-md-4 example web" style="color:black;">
                 <div class="iexample" style="background-image:url('images/sochome.png'); background-size:cover; opacity:.8;">
-                   <div class="folio-caption 1"> <h1>Student Opportunity Center</h1><br>
+                   <div class="folio-caption" style="padding-bottom:22.5%"> <h1>Student Opportunity Center</h1><br>
                     <h5> Current Employer | Front-End Development | Design</div>
                 </div>
             </div>
 
-            <div class="col-md-4 example web" style="color:black; background-color:white">
+            <div class="col-md-4 example web"style="color:black; background-color:white">
                 <div class="iexample" style="background-image:url('images/2.png'); background-size:cover; opacity:.8;">
-                    <div class="folio-caption 2"><h1 style="margin-bottom:13%">Harrison Bail Bonds</h1><br>
+                    <div class="folio-caption"><h1 style="margin-bottom:13%">Harrison Bail Bonds</h1><br>
                         <h4> Current Project </h4>
                         <h5> Freelance | Landing Page | Web Development & Design </h5></div>
                 </div>
@@ -197,7 +196,7 @@ left:1%;
     
             <div class="col-md-4 example web" style="color:black; background-color:white">
                 <div class="iexample" style="background-image:url('images/3.png'); background-size:cover; opacity:.8;">
-                    <div class="folio-caption 3"><h1 style="margin-bottom:13%">Go Green Innovations</h1><br>
+                    <div class="folio-caption"><h1 style="margin-bottom:13%">Go Green Innovations</h1><br>
                         <h4>Current Project</h4>
                         <h5>Freelance | Website | Web Development & Design</h5></div>
                 </div>
@@ -205,7 +204,7 @@ left:1%;
 
             <div class="col-md-4 example design" style="color:black;">
                 <div class="iexample" style="background-image:url('images/lightbulb.png'); background-size:cover; opacity:.8;">
-                   <div class="folio-caption 4"> <h1>Student Opportunity Center</h1><br>
+                   <div class="folio-caption"> <h1>Student Opportunity Center</h1><br>
                     <h5> Current Employer | Graphic Design </div>
                 </div>
             </div>
@@ -243,118 +242,81 @@ left:1%;
 <script src="js/test.js"></script>
 
 <script type="text/javascript">
-$(".glyphicon-align-justify").addClass("clicked");
-    $(document).ready(function(){  
 
-    $(".oops").hide()                
-        /*$(window).scroll(function(){                          
-            if ($(this).scrollTop() > 800) {
-                $('.navtoggle').fadeIn(500);
-            } else {
-                if(!$('glyphicon-align-justify').hasClass("clicked")){
-                	$('.nav').fadeOut();
-                }
-                $('.navtoggle').fadeOut(500);
-                $('.nav').fadeOut;
-            }
-            if ($(this).scrollTop() > 100) {
-                $('.scrolltop').fadeIn(500);
-            } else {
-                $('.scrolltop').fadeOut(500);
-            }
-        });*/
+(function(j){
 
-        $(".glyphicon-align-justify").click(function(){
-        if($(".glyphicon-align-justify").hasClass("clicked")){
-        $(".nav").fadeIn()
-        $(".navtoggle").animate({right:'15%'}, {duration: 800})
-        $(".glyphicon-align-justify").removeClass("clicked");
-    	}else {
-    	$(".nav").fadeOut()
-    	$(".navtoggle").animate({right:'1%'}, {duration: 600})
-    	$(".glyphicon-align-justify").addClass("clicked");}
+    var foliobox = $('.folio-caption');
+    var web = $('.web');
+    var design = $('.design');
+    var arrowup = $('.scrolltop');
+    var navout = $('.navtoggle');
+    var nav = $('.nav');
+    var colors = ["#990000", "#000b42", "#ffce00", "#fb7200", "#008000",
+    "#470000", "#00bfff", "#772ed6", "#ff0000", "#12cf3c"];
 
+
+    navout.click(function(){
+        navout.animate({right:'15%'});
+        nav.show();
     });
 
-           $(".c-all").click(function(){
-            $(".web").show('slide', 500)
-            $(".design").show('slide', 500)
-            $(".oops").hide()
-            $('.c-all').css({'color':'black'})
-            $('.cweb').css({'color':'gray'})
-            $('.cdesign').css({'color':'gray'})
-        });
-
-        $(".cweb").click(function(){
-            $(".web").show('slide')
-            $(".design").hide('slide')
-            $(".oops").hide()
-            $('.cweb').css({'color':'black'})
-            $('.c-all').css({'color':'gray'})
-            $('.cdesign').css({'color':'gray'})
-
-        });
-
-        $(".cdesign").click(function(){
-            $(".web").hide('slide')
-            $(".design").delay(200).show('slide')
-            $('.cdesign').css({'color':'black'})
-            $('.c-all').css({'color':'gray'})
-            $('.cweb').css({'color':'gray'})
-        });
+    nav.hover(function(){
+        nav.show(); }, function(){
+        nav.hide('slow');
+        navout.animate({right:'1%'});
     });
 
-        $(".1").hover(
-            function(){
-            $(this).animate({'opacity':'.8', 'background-color':'red'})},
+    j(foliobox).hover(function(){
+    j(this).animate({'opacity':'.8', 'background-color':colors[Math.floor(Math.random() * colors.length)]})}, function(){
+    j(this).animate({'opacity':'.6', 'background-color':'black'})
+    });
 
-            function(){
-            $(this).animate({'opacity':'.6', 'background-color':'black'})
-        });
+    $(".cweb").click(function(){
+    web.show('slide')
+    design.hide('slide')
+    $('.cweb').css({'color':'black'})
+    $('.c-all, .cdesign').css({'color':'gray'})
+    });
 
-        $(".2").hover(
-            function(){
-            $(this).animate({'opacity':'.8', 'background-color':'blue'})},
+    $(".c-all").click(function(){
+    web.show('slide')
+    design.show('slide')
+    $('.c-all').css({'color':'black'})
+    $('.cweb, .cdesign').css({'color':'gray'})
+    });
 
-            function(){
-            $(this).animate({'opacity':'.6', 'background-color':'black'})
-        });
+    $(".cdesign").click(function(){
+    web.hide('slide')
+    design.delay(200).show('slide')
+    $('.cdesign').css({'color':'black'})
+    $('.c-all, .cweb').css({'color':'gray'})
+    });
 
-        $(".3").hover(
-            function(){
-            $(this).animate({'opacity':'.8', 'background-color':'green'})},
+    $(window).scroll(function(){                         
+        if ($(this).scrollTop() > 100) {
+            arrowup.fadeIn(500);
+        } else {
+            arrowup.fadeOut(500);
+        }
+    });
+           
+    arrowup.click(function() {
+        if ($(window).scrollTop() == 0) {
+            $("html, body").animate({scrollTop:$(document).height()}, 500);
+        } else {
+            $("html, body").animate({scrollTop:0}, 500);
+        }
+    });
 
-            function(){
-            $(this).animate({'opacity':'.6', 'background-color':'black'})
-        });
-
-         $(".4").hover(
-            function(){
-            $(this).animate({'opacity':'.8','color':'black', 'background-color':'yellow'})},
-
-            function(){
-            $(this).animate({'opacity':'.6','color':'white', 'background-color':'black'})
-        });
-
-            $(".4").click(function(){
-            $('.oops').slideToggle('slide');
-        });
-
-
-$('.scrolltop').click(function() {
-    if ($(window).scrollTop() == 0) {
-        $("html, body").animate({ scrollTop: $(document).height() }, 500);
-    } else {
-        $("html, body").animate({ scrollTop: 0 }, 500);
-    }
-});
-
-$('a').click(function(){
+    $('a').click(function(){
     $('html, body').animate({
-        scrollTop: $($(this).attr('href')).offset().top
-    }, 800);
+        scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+    }, 700);
     return false;
-});
+    });
+
+})(jQuery);
+
 
 
 </script>
