@@ -136,6 +136,11 @@ span.glyphicon-chevron-up:hover{
 
 <script>
 
+(function(j){
+    var arrowup = $('.scrolltop');
+    var navout = $('.navtoggle');
+    var nav = $('.nav');
+
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
      navout.click(function(){
         navout.animate({right:'90%'});
@@ -148,5 +153,6 @@ span.glyphicon-chevron-up:hover{
         navout.animate({right:'1%'});
     });
 }
+})(jQuery);
 
 </script>
