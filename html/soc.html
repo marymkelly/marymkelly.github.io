@@ -14,6 +14,18 @@ body{
 	background-image: none;
 }
 
+h3{
+	color:#cccccc;
+}
+h4{
+	color:#a9e7ff;
+}
+
+h5{
+	display: inline-block;
+	color: #a9e7ff;
+}
+
 .navtoggle{
 	display: block;
 }
@@ -22,40 +34,25 @@ span.glyphicon-align-justify{
 	color: white;
 }
 
-.wrapper{
-	
+span.glyphicon-chevron-up:hover{
+	color: #a9e7ff;
 }
 
-.arrow{
-   width: 0%; 
-	height: 0%; 
-	border-left: 625px solid transparent;
-	border-right: 625px solid transparent;
-	border-top: 100px solid gray; 
+.nav li a:hover{
+	color: #a9e7ff;
 }
 
-.triangle-down {
-    width: 100%;
-    height: 0;
-    padding-left:10%;
-    padding-top: 10%;
-    overflow: hidden;
-}
-.triangle-down:after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    margin-left:-113px;
-    margin-top:-113px;
-    
-    border-left: 500px solid transparent;
-    border-right: 500px solid transparent;
-    border-top: 100px solid white;
+.jumbotron{
+	background-color: inherit; 
+	border-radius: 0; 
+	padding-top:7%; 
+	margin-bottom: 5%;
 }
 
-h5{
-	display: inline-block;
+.section{
+	padding-top:2%;
+	border: 1px groove #cccccc;
+	margin-bottom: 7%;
 }
 
 </style>
@@ -72,51 +69,82 @@ h5{
        <li><a href="../index.html#contact"><h3> Contact </a></li>
 	  <!-- <li><a href="#resume"><h3> Resume </a></li>-->
     </div>
-    <div class="container dark-gray">
-    	<div class="col-lg-10 col-lg-offset-1"  style="padding-bottom:2%; border-bottom: 1px groove #cccccc; margin-bottom:4%">
-	<h1 style="font-size:60px;"> Student Opportunity Center </h1><br>
-	<h4> Current Employer | Front-end Web Developer | As-needed Graphic Designer <br></h4>
-	<h5 style="color:#a9e7ff">Dates: October 2014 - Current</h5> <h5 style="color:white"> |</h5> <h5> <a href="http://www.studentopportunitycenter.com" style="text-decoration:none; color: #a9e7ff" target="_blank">www.studentopportunitycenter.com</a></h5> </div>
-	<div class="jumbotron" style="background-color:; border-radius:0; padding-top:7%; margin-bottom:0;">
-	
-	<h3 style="color:#cccccc"> Login/Sign Up Page Redesign <br><h4 style="color:#a9e7ff"> Before 
 
-	<div style="margin-bottom:5%"><img src="../images/beforesignup.jpg" width="90%"></div>
-	<!--<div class="triangle-down"></div>-->
+    <div class="container dark-gray">
+    <div style="padding-bottom:2%; margin-bottom:4%">
+	<h1 style="font-size:60px;"> Student Opportunity Center </h1><br>
+	<h4 style="color:#cccccc"> Current Employer | Front-end Web Developer | As-needed Graphic Designer <br></h4>
+	<h5>Dates: October 2014 - Current</h5> <h5 style="color:white"> |</h5> <h5> 
+	<a href="http://www.studentopportunitycenter.com" style="text-decoration:none; color: #a9e7ff" target="_blank">www.studentopportunitycenter.com</a></h5></div>
+	
+	<div class="jumbotron">
+	
+	<div class="section">
+	<h3> Login/Sign Up Page Redesign <br>
+	<h4 style="color:#a9e7ff"> Before <br>
+	<div style="margin-bottom:5%"><img src="../images/beforesignup.jpg" width="90%" style="margin-top:2%"></div>
 	After </h4>
 	<div><img src="../images/aftersignup.jpg" width="90%"></div>
 	<h5 style="color:white"> See live login page <a href="https://www.studentopportunitycenter.com/app/#/signup" style="text-decoration:none; color: #a9e7ff" target="_blank"><h5 style="color:#a9e7ff"> here </a></h5>
-	<h3 style="color:#cccccc"> University Page <br><h4 style="color:#a9e7ff"> Animation | Minor Design Edits
-	<div>
+	</div>
+
+	<div class="section">
+	<h3> University Page <br><h4 style="color:#a9e7ff"> Animation | Minor Design Edits
 	<img src="../images/fulluniv.jpg" width="90%" style="margin-top:2%">
 	<img src="../images/moduals.jpg" width="90%" style="margin-top:5%">
-	</div>
-	<h5 style="color:white"> See live university page <a href="https://www.studentopportunitycenter.com/#/universities" style="text-decoration:none; color: #a9e7ff" target="_blank"><h5 style="color:#a9e7ff"> here </a></h5>
+	<h5 style="color:white"> See live university page 
+	<a href="https://www.studentopportunitycenter.com/#/universities" style="text-decoration:none; color: #a9e7ff" target="_blank"><h5 style="color:#a9e7ff"> here </a></h5>
 	</div>
 
+	<div class="section">
 	<a name="graphics"></a>
-	<h3 style="color:#cccccc"> Graphics </h3>
+	<h3> Graphics </h3>
 	<div class="row">
 		<div class="col-lg-4 col-lg-offset-1">
-	<img src="../images/lightbulb.jpg" width="90%" style="margin-top:5%">
+			<img src="../images/lightbulb.jpg" width="90%" style="margin-top:5%">
 		</div>
 		<div class="col-lg-6">
-	<img src="../images/icons.jpg" width="100%" style="margin-top:5%">
-</div>
+			<img src="../images/icons.jpg" width="100%" style="margin-top:5%">
+		</div>
 	</div>
-
-
+	</div>
+	<div class="scrolltop"><span class="glyphicon glyphicon-chevron-up"></div>
 </div>
-
+</div>
 
 <!-- WRAPPER DIV -->
 </div>
 </body>
 
-
-
-
 <script src="../js/jquery-1.11.1.min.js"></script>
 <script src="../js/jquery-2.1.1.min.js"></script>
 <script src="../js/jquery-ui.min.js"></script>
 <script src="../js/nav.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-59222277-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script>
+
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+     navout.click(function(){
+        navout.animate({right:'90%'});
+        nav.delay(150).slideDown();
+        nav.css({'width:70%'})
+    });
+
+      nav.click(function(){
+        nav.hide('slow');
+        navout.animate({right:'1%'});
+    });
+}
+
+</script>

@@ -17,14 +17,6 @@
     });
 
     $(window).scroll(function(){                         
-        if ($(this).scrollTop() > 500) {
-            navout.fadeIn(500);
-        } else {
-            navout.fadeOut(500);
-        }
-    });
-
-    $(window).scroll(function(){                         
         if ($(this).scrollTop() > 100) {
             arrowup.fadeIn(500);
         } else {
@@ -46,4 +38,5 @@
     }, 700);
     return false;
     });
+
 })(jQuery);

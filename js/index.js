@@ -2,6 +2,7 @@
 
 (function(j){
 
+	var navout = $('.navtoggle');
     var foliobox = $('.folio-caption');
     var web = $('.web');
     var design = $('.design');
@@ -42,5 +43,13 @@
     $('#test').css({'padding-left':'0%'})
     foliobox.css({'padding-top':'45%'})
 }
+
+    $(window).scroll(function(){                         
+        if ($(this).scrollTop() > 500) {
+            navout.fadeIn(500);
+        } else {
+            navout.fadeOut(500);
+        }
+    });
 
 })(jQuery);
