@@ -325,6 +325,11 @@ left:1%;
     return false;
     });
 
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    navout.hide();
+    $('.col-md-4').css({'width':'90%'})
+}
+
 
 })(jQuery);
 
