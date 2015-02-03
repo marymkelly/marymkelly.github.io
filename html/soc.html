@@ -143,12 +143,13 @@ span.glyphicon-chevron-up:hover{
 
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
      navout.click(function(){
-        navout.animate({right:'90%'});
+        navout.hide();
         nav.delay(150).slideDown();
-        nav.css({'width':'70%'})
+        nav.css({'width':'100%'})
     });
 
       nav.click(function(){
+      	navout.show();
         nav.hide('slow');
         navout.animate({right:'1%'});
     });
