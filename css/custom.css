@@ -151,11 +151,11 @@ span.glyphicon-align-justify{
 	padding: 2%;
 }
 
-.fa-github, .fa-linkedin, .fa-codepen{
+.fa-github, .fa-linkedin, .fa-codepen, .fa-twitter{
     color: white;
 }
 
-.icon:hover .fa-github, .icon:hover .fa-linkedin, .icon:hover .fa-codepen{
+.icon:hover .fa-github, .icon:hover .fa-linkedin, .icon:hover .fa-codepen, .icon:hover .fa-twitter{
     transition: 0.9s;
     transform: rotateY(360deg);
     color: #ae0000;
