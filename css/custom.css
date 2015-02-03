@@ -18,9 +18,7 @@ body{
 	background-attachment: fixed;*/
 }
 
-
-
-h1 {
+h1, h4, h5, h6 {
 	font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -48,7 +46,7 @@ h3{
 	margin: 2%;
 	right: 1%;
 	position: fixed;
-	/*display: none;*/
+	display: none;
 	z-index: 200;
 }
 
@@ -119,20 +117,53 @@ span.glyphicon-align-justify{
 	display: none;
 }
 
-.example{
-	width: 80%;
-}
 
-.c-all:hover{
+.c-all, .cdesign, .cweb, .web, .design{}
+
+.c-all:hover, .cweb:hover, .cdesign:hover{
 	color:black;
 }
 
-.cweb:hover{
-	color:black;
+
+.folio-box{
+    width: 90%;
+    height: 60%;
+    background-size:cover;
+    opacity:.8;
 }
 
-.cdesign:hover{
-	color: black;
+
+#folio-title{
+    margin-bottom: 13%;
+}
+
+
+.folio-caption{
+    padding-top: 22%;
+    background-color:#252525;
+    opacity: .6;
+    color: rgba(255,255,255,1);
+    height: 100%;
+    width: 100%;
+}
+
+.contact{
+	padding: 2%;
+}
+
+.fa-github, .fa-linkedin, .fa-codepen{
+    color: white;
+}
+
+.icon:hover .fa-github, .icon:hover .fa-linkedin, .icon:hover .fa-codepen{
+    transition: 0.9s;
+    transform: rotateY(360deg);
+    color: #ae0000;
+}
+
+.copyright{
+    left:48%;
+    color: white;
 }
 
 span.glypicon-chevron-up{
@@ -142,6 +173,19 @@ span.glypicon-chevron-up{
 
 span.glyphicon-chevron-up:hover{
 	color: #ae0000;
+}
+
+
+.row{
+	display: inline-block;
+	width: 100%;
+    margin-bottom: 3%;
+}
+
+.col-md-4{
+    display: inline-block;
+    width: 33.33%;
+    margin-bottom: 2%;
 }
 
 .col-lg-8{
@@ -163,6 +207,11 @@ span.glyphicon-chevron-up:hover{
 	background-color: #2b2b2b;
 	color: white;
 	padding: 6%;
+}
+
+.gray{
+	background-color:#cccccc;
+	padding:6%;
 }
 
 /* Div Color Elements [End] --------------------------------------------------*/

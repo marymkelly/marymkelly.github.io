@@ -11,134 +11,6 @@
 
 <meta name=viewport content='width=661'>
 
-<style>
-.test{
-top:2%;
-position:fixed;
-left:1%;
-}
-
-.te{
-	top: 45%;
-	position: fixed;
-	opacity: 0;
-}
-
-#test{
-
-
-}
-#co{
-	width: 100%;
-	height: 100%;
-	border: 10px solid;
-	border-bottom: none;
-}
-
-.contact{
-	padding: 2%;
-}
-
-.row{
-	display: inline-block;
-	width: 100%;
-}
-
-.col-md-4{
-    display: inline-block;
-    width: 33.33%;
-    margin-bottom: 2%;
-}
-
-.iexample{
-    width: 90%;
-    height: 60%;
-}
-
-.iexample img{
-    width: 85.4%;
-}
-
-.cweb{
-    display: hidden;
-}
-.c-all{}
-.cdesign{}
-.web{}
-.design{
-    display: visible;
-}
-
-.folio-co-icon{
-    padding-top: 15%;
-    margin-bottom: 5%;
-}
-.folio-co-icon img{
-    width: 80%;
-}
-
-.folio-caption{
-    padding-top: 22%;
-    background-color:#252525;
-    opacity: .6;
-    color: rgba(255,255,255,1);
-    height: 100%;
-    width: 100%;
-}
-
-.copyright{
-    left:48%;
-    color: white;
-}
-
-.icon:hover .fa-github, .icon:hover .fa-linkedin, .icon:hover .fa-codepen{
-    transition: 0.9s;
-    transform: rotateY(360deg);
-    color: #ae0000;
-}
-
-.fa-github, .fa-linkedin, .fa-codepen{
-    color: white;
-}
-
-.oops {
-    display: hidden;
-    color: #252525;
-}
-
-/*.iexample:hover img{
-    transition: 2s;
-    opacity: .5;
-}
-
-.iexample:hover{
-    transition: 5s;
-    transition-timing-function: linear;
-    -webkit-animation: myfirst 5s;
-}
-
-
-
-@-webkit-keyframes myfirst {
-    from {background: none;}
-    to {background: yellow;}
-}*/
-
-/*.iexample:hover{
-    transition: 0.9s;
-    transform: rotateY(360deg);
-    color: #ae0000;
-    -webkit-animation: mysecond 1s;
-}
-
-@-webkit-keyframes mysecond {
-    from {background-image: url('images/2.png');}
-    to {background-image: url('images/1.png');}
-}*/
-</style>
-
-
-
 <body>
 <a name="home"></a>
 <div class="wrapper" align="center">
@@ -160,7 +32,8 @@ left:1%;
         </div>
     </div>
     <a name="about"></a>
-    <div class="container" style="background-color:#cccccc; padding:6%"></a><h1 style="font-size:60px; margin-bottom: 4%"> About </h1>
+    <div class="container gray">
+        <h1 style="font-size:60px; margin-bottom: 4%"> About </h1>
        <!-- <div class="row" style="margin-bottom:3%">
             <div class="col-md-6"><h2> Who I am </h2></div><div class="col-md-6">  Stuff about who I am</div>  
         </div>
@@ -168,54 +41,54 @@ left:1%;
             <div class="col-md-6"><h2> What I do </h2></div><div class="col-md-6">  Stuff about what I do</div>  
         </div>-->
     </div>
+
     <a name="portfolio"></a>
-    <div class="container" style="background-color:white; padding:0%; padding-top:3%"><h1 style="font-size:60px"> Portfolio </h1>
+    <div class="container" style="background-color:white; padding:0%; padding-top:3%">
+        <h1 style="font-size:60px"> Portfolio </h1>
         <div class="jumbotron" style="margin-bottom:0;padding:0%;">
-        <div class="row" id="test" style="margin-bottom:3%; padding-left:7%">
+        <div class="row" style="padding-left:7%">
         <h3 style="color:gray">
             <div class="col-md-1 col-md-offset-4 c-all" style="color:black">All</div>
             <div class="col-md-1 cweb">Web</div>
             <div class="col-md-1 cdesign"> Design</div></h3>
         </div>
 
-        <div class="row" style="margin-bottom:3%;"><h3>
-            <div class="col-md-4 example web" style="color:black;">
-                <div class="iexample" style="background-image:url('images/sochome.png'); background-size:cover; opacity:.8;">
+        <a href="html/soc.html"><div class="row"><h3>
+            <div class="col-md-4 web">
+                <div class="folio-box" style="background-image:url('images/sochome.png');">
                    <div class="folio-caption"> <h1>Student Opportunity Center</h1><br>
                     <h5> Current Employer | Front-End Development & Design</div>
                 </div>
-            </div>
+            </div></a>
 
-            <div class="col-md-4 example web"style="color:black; background-color:white">
-                <div class="iexample" style="background-image:url('images/2.png'); background-size:cover; opacity:.8;">
-                    <div class="folio-caption"><h1 style="margin-bottom:13%">Harrison Bail Bonds</h1><br>
+            <div class="col-md-4 web">
+                <div class="folio-box" style="background-image:url('images/2.png');">
+                    <div class="folio-caption"><h1 id="folio-title">Harrison Bail Bonds</h1><br>
                         <h4> Current Project </h4>
                         <h5> Freelance | Landing Page | Web Development & Design </h5></div>
                 </div>
             </div>
     
-            <div class="col-md-4 example web" style="color:black; background-color:white">
-                <div class="iexample" style="background-image:url('images/3.png'); background-size:cover; opacity:.8;">
-                    <div class="folio-caption"><h1 style="margin-bottom:13%">Go Green Innovations</h1><br>
+            <div class="col-md-4 web">
+                <div class="folio-box" style="background-image:url('images/3.png');">
+                    <div class="folio-caption"><h1 id="folio-title">Go Green Innovations</h1><br>
                         <h4>Current Project</h4>
                         <h5>Freelance | Website | Web Development & Design</h5></div>
                 </div>
             </div>
 
-            <div class="col-md-4 example design" style="color:black;">
-                <div class="iexample" style="background-image:url('images/lightbulb.png'); background-size:cover; opacity:.8;">
+             <a href="html/soc.html#graphics"><div class="col-md-4 design">
+                <div class="folio-box" style="background-image:url('images/lightbulb.png');">
                    <div class="folio-caption"> <h1>Student Opportunity Center</h1><br>
                     <h5> Current Employer | Graphic Design </div>
                 </div>
-            </div>
-            <!--<div class="col-md-6 oops" align="center" style="padding-bottom:10%"><h2> <img src="images/lightbulb.png"></div>-->
-
+            </div></a>
         </div>  
         
         </div>
     </div>
     <a name="contact"></a>
-    <div class="container dark-gray" style="padding-bottom:0%">
+    <div class="container dark-gray">
         <h1 style="font-size:70px">Contact</h1>
 	   <div class="scrolltop"><span class="glyphicon glyphicon-chevron-up"></div>
 	   <div class="contact"><h3> mk-km@live.com </h3></div>
@@ -241,8 +114,8 @@ left:1%;
 <script src="js/jquery-2.1.1.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
 <script src="js/index.js"></script>
-<!--<script src="js/nav.js"></script>-->
-<script src="js/test.js"></script>
+<script src="js/nav.js"></script>
+<!--<script src="js/test.js"></script>-->
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -252,94 +125,5 @@ left:1%;
 
   ga('create', 'UA-59222277-1', 'auto');
   ga('send', 'pageview');
-
-</script>
-
-<script type="text/javascript">
-
-(function(j){
-
-    var foliobox = $('.folio-caption');
-    var web = $('.web');
-    var design = $('.design');
-    var arrowup = $('.scrolltop');
-    var navout = $('.navtoggle');
-    var nav = $('.nav');
-    var colors = ["#990000", "#000b42", "#ffce00", "#fb7200", "#008000",
-    "#470000", "#00bfff", "#772ed6", "#ff0000", "#12cf3c"];
-
-
-    navout.click(function(){
-        navout.animate({right:'15%'});
-        nav.delay(150).slideDown();
-    });
-
-    nav.hover(function(){
-        nav.show(); }, function(){
-        nav.hide('slow');
-        navout.animate({right:'1%'});
-    });
-
-    j(foliobox).hover(function(){
-    j(this).animate({'opacity':'.8', 'background-color':colors[Math.floor(Math.random() * colors.length)]})}, function(){
-    j(this).animate({'opacity':'.6', 'background-color':'black'})
-    });
-
-    $(".cweb").click(function(){
-    web.show('slide')
-    design.hide('slide')
-    $('.cweb').css({'color':'black'})
-    $('.c-all, .cdesign').css({'color':'gray'})
-    });
-
-    $(".c-all").click(function(){
-    web.show('slide')
-    design.show('slide')
-    $('.c-all').css({'color':'black'})
-    $('.cweb, .cdesign').css({'color':'gray'})
-    });
-
-    $(".cdesign").click(function(){
-    web.hide('slide')
-    design.delay(200).show('slide')
-    $('.cdesign').css({'color':'black'})
-    $('.c-all, .cweb').css({'color':'gray'})
-    });
-
-    $(window).scroll(function(){                         
-        if ($(this).scrollTop() > 100) {
-            arrowup.fadeIn(500);
-        } else {
-            arrowup.fadeOut(500);
-        }
-    });
-           
-    arrowup.click(function() {
-        if ($(window).scrollTop() == 0) {
-            $("html, body").animate({scrollTop:$(document).height()}, 500);
-        } else {
-            $("html, body").animate({scrollTop:0}, 500);
-        }
-    });
-
-    $('a').click(function(){
-    $('html, body').animate({
-        scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
-    }, 700);
-    return false;
-    });
-
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    navout.hide();
-    arrowup.hide();
-    $('.col-md-4').css({'width':'90%'})
-    $('#test').css({'padding-left':'0%'})
-    foliobox.css({'padding-top':'45%'})
-}
-
-
-})(jQuery);
-
-
 
 </script>

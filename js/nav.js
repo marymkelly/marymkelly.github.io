@@ -1,30 +1,49 @@
 //nav.js	
-$(document).ready(function(){
-    $(".glyphicon-align-justify").addClass("clicked");
-    });
-    $(document).ready(function(){
-    $(".glyphicon-align-justify").click(function(){
-        if($(".glyphicon-align-justify").hasClass("clicked")){
-        $(".nav").fadeIn()
-        $(".navtoggle").animate({right:'20%'}, {duration: 600})
-        $(".glyphicon-align-justify").removeClass("clicked");
-    }else {
-    	$(".nav").animate({right:'-20%'}, {duration: 600})
-    	$(".navtoggle").animate({right:'1%'}, {duration: 600})
-    	$(".glyphicon-align-justify").addClass("clicked");}
-    });
-	});
+(function(j){
+    var arrowup = $('.scrolltop');
+    var navout = $('.navtoggle');
+    var nav = $('.nav');
 
-/*$(document).ready(function(){
-    $(".glyphicon-align-justify").removeClass("clicked");
+
+    navout.click(function(){
+        navout.animate({right:'15%'});
+        nav.delay(150).slideDown();
     });
-    $(document).ready(function(){
-    $( ".glyphicon-align-justify" ).mouseover(function(){
-        $(".navtoggle").animate({right:'20%'}, {duration: 400});
-        $(".nav").animate({right:'0%'}, {duration: 400}).hover(function(){
-    }, function(){
-        $(".nav").animate({right:'-20%'}, {duration: 400})
-        $(".navtoggle").animate({right:'1%'}, {duration: 400})
+
+    nav.hover(function(){
+        nav.show(); }, function(){
+        nav.hide('slow');
+        navout.animate({right:'1%'});
     });
+
+    $(window).scroll(function(){                         
+        if ($(this).scrollTop() > 500) {
+            navout.fadeIn(500);
+        } else {
+            navout.fadeOut(500);
+        }
     });
-    });*//
+
+    $(window).scroll(function(){                         
+        if ($(this).scrollTop() > 100) {
+            arrowup.fadeIn(500);
+        } else {
+            arrowup.fadeOut(500);
+        }
+    });
+           
+    arrowup.click(function() {
+        if ($(window).scrollTop() == 0) {
+            $("html, body").animate({scrollTop:$(document).height()}, 500);
+        } else {
+            $("html, body").animate({scrollTop:0}, 500);
+        }
+    });
+
+    $('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+    }, 700);
+    return false;
+    });
+})(jQuery);
