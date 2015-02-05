@@ -151,11 +151,11 @@ span.glyphicon-align-justify{
 	padding: 2%;
 }
 
-.fa-github, .fa-linkedin, .fa-codepen, .fa-twitter{
+.fa-github, .fa-linkedin, .fa-codepen, .fa-twitter, .fa-behance{
     color: white;
 }
 
-.icon:hover .fa-github, .icon:hover .fa-linkedin, .icon:hover .fa-codepen, .icon:hover .fa-twitter{
+.icon:hover .fa-github, .icon:hover .fa-linkedin, .icon:hover .fa-codepen, .icon:hover .fa-twitter, .icon:hover .fa-behance{
     transition: 0.9s;
     transform: rotateY(360deg);
     color: #ae0000;
