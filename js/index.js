@@ -39,7 +39,7 @@
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     navout.hide();
     arrowup.hide();
-    $('.col-md-4').css({'width':'90%'})
+    $('.col-md-4').animate({'width':'90%'}, 0)
     $('#test').css({'padding-left':'0%'})
     foliobox.css({'padding-top':'45%'})
 }
