@@ -1,0 +1,205 @@
+body{
+	background-image: url('../images/MK-wall.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;*/
+}
+
+h1, h4, h5, h6 {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+h2{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 30px;
+}
+
+h3{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 20px;
+}
+
+.wrapper{
+	height: auto;
+	width: 100%;
+	border: 10px solid;
+}
+
+
+/* Navigation [Start] -------------------------------------------------- */
+
+/* Nav Icon */
+.navtoggle {
+	margin: 2%;
+	right: 1%;
+	position: fixed;
+	display: none;
+	z-index: 200;
+}
+
+
+span.glyphicon-align-justify{
+	font-size: 30px;
+	/*display: none;*/
+	color: #ae0000;
+	z-index: 200;
+	opacity: .7;
+}
+
+/* Nav Box */
+.nav{
+	background-color: white;
+	top: 2%;
+	height: auto;
+	width: 15%;
+	z-index: 10;
+	position: fixed;
+	opacity: .8;
+	right: 1%;
+	display: none;
+	border: 2px solid;
+	padding-right: 1%;
+}
+
+.nav ul{
+		text-align: center;
+		list-style-type: none;
+		color: black;
+		margin-right: 10%;
+}
+
+.nav li{
+
+}
+
+.nav li a{
+	color: black;
+	text-decoration: none;
+}
+
+.nav li a:hover{
+	color: #ae0000;
+}
+
+/* Navigation [End] --------------------------------------------------------*/
+/* Body Structure [Start] --------------------------------------------------*/
+
+.container{
+	width: 100%;
+	
+}
+
+.jumbotron{
+	background-color: inherit;
+	color: rgba(255,255,255,  1);
+	padding-top: 18%;
+}
+
+.scrolltop {
+	margin: 2%;
+	right: 1%;
+	bottom: 1%;
+	position: fixed;
+	z-index: 200;
+	display: none;
+}
+
+
+.c-all, .cdesign, .cweb, .web, .design{}
+
+.c-all:hover, .cweb:hover, .cdesign:hover{
+	color:black;
+}
+
+
+.folio-box{
+    width: 90%;
+    height: 60%;
+    background-size:cover;
+    opacity:.8;
+}
+
+
+#folio-title{
+    margin-bottom: 13%;
+}
+
+
+.folio-caption{
+    padding-top: 22%;
+    background-color:#252525;
+    opacity: .6;
+    color: rgba(255,255,255,1);
+    height: 100%;
+    width: 100%;
+}
+
+.contact{
+	padding: 2%;
+}
+
+.fa-github, .fa-linkedin, .fa-codepen, .fa-twitter, .fa-behance{
+    color: white;
+}
+
+.icon:hover .fa-github, .icon:hover .fa-linkedin, .icon:hover .fa-codepen, .icon:hover .fa-twitter, .icon:hover .fa-behance{
+    transition: 0.9s;
+    transform: rotateY(360deg);
+    color: #ae0000;
+}
+
+.copyright{
+    left:48%;
+    color: white;
+}
+
+span.glypicon-chevron-up{
+	font-size: 50px;
+	color: white;
+}
+
+span.glyphicon-chevron-up:hover{
+	color: #ae0000;
+}
+
+
+.row{
+	display: inline-block;
+	width: 100%;
+    margin-bottom: 3%;
+}
+
+.col-md-4{
+    display: inline-block;
+    width: 33.33%;
+    margin-bottom: 2%;
+}
+
+.col-lg-8{
+	height: 100%;
+	border-left: 0px solid;
+	background-color: gray;
+	display: none;
+}
+
+/* Body Structure [End] --------------------------------------------------*/
+/* Div Color Elements [Start] --------------------------------------------------*/
+.black-transparent{
+	background-color: black;
+	opacity: .6;
+	color: rgba(255,255,255,  1);
+}
+
+.dark-gray{
+	background-color: #2b2b2b;
+	color: white;
+	padding: 6%;
+}
+
+.gray{
+	background-color:#cccccc;
+	padding:6%;
+}
+
+/* Div Color Elements [End] --------------------------------------------------*/
