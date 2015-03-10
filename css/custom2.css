@@ -1,5 +1,5 @@
 body{
-	background-image: url('../images/MK-wall.jpg');
+	/*background-image: url('../images/MK-wall.jpg');*/
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -11,8 +11,11 @@ h1, h4, h5, h6 {
 }
 
 h2{
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 30px;
+	font-family: 'Geostar', cursive;
+	/*font-family: 'Six Caps', sans-serif;*/
+	/*font-family: 'Aguafina Script', cursive;*/
+	font-size: 55px;
+	 text-shadow: 4px 4px 8px black, 4px 4px 5px #ff1a00;
 }
 
 h3{
@@ -34,7 +37,7 @@ h3{
 	margin: 2%;
 	right: 1%;
 	position: fixed;
-	display: none;
+	/*display: none;*/
 	z-index: 200;
 }
 
@@ -42,7 +45,7 @@ h3{
 span.glyphicon-align-justify{
 	font-size: 30px;
 	/*display: none;*/
-	color: #ae0000;
+	color: #ff2700;
 	z-index: 200;
 	opacity: .7;
 }
@@ -79,7 +82,7 @@ span.glyphicon-align-justify{
 }
 
 .nav li a:hover{
-	color: #ae0000;
+	color: #ff2700;
 }
 
 /* Navigation [End] --------------------------------------------------------*/
@@ -93,7 +96,7 @@ span.glyphicon-align-justify{
 .jumbotron{
 	background-color: inherit;
 	color: rgba(255,255,255,  1);
-	padding-top: 18%;
+	padding-top: 13%;
 }
 
 .scrolltop {
@@ -140,18 +143,20 @@ span.glyphicon-align-justify{
 }
 
 .fa-github, .fa-linkedin, .fa-codepen, .fa-twitter, .fa-behance{
-    color: white;
+    color: black;
 }
 
 .icon:hover .fa-github, .icon:hover .fa-linkedin, .icon:hover .fa-codepen, .icon:hover .fa-twitter, .icon:hover .fa-behance{
     transition: 0.9s;
     transform: rotateY(360deg);
-    color: #ae0000;
+    -webkit-transform: rotateY(360deg);
+    color: #ff2700;
 }
 
 .copyright{
     left:48%;
-    color: white;
+    color: black;
+    padding-bottom: 1%;
 }
 
 span.glypicon-chevron-up{
@@ -160,7 +165,7 @@ span.glypicon-chevron-up{
 }
 
 span.glyphicon-chevron-up:hover{
-	color: #ae0000;
+	color: #ff2700;
 }
 
 
@@ -187,14 +192,13 @@ span.glyphicon-chevron-up:hover{
 /* Div Color Elements [Start] --------------------------------------------------*/
 .black-transparent{
 	background-color: black;
-	opacity: .6;
+	opacity: .7;
 	color: rgba(255,255,255,  1);
 }
 
 .dark-gray{
 	background-color: #2b2b2b;
 	color: white;
-	padding: 6%;
 }
 
 .gray{

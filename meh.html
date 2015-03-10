@@ -4,6 +4,38 @@
 
 <!DOCTYPE html lang="en">
 
+<style>
+
+.test{
+  position: fixed;
+  background-color: white;
+  color: black;
+  width: 100%;
+  bottom: 0;
+  z-index: -1;
+  opacity: .9;
+  display: none;
+}
+
+.col-md-2{
+  padding-left: 0px;
+}
+
+#contact{
+
+}
+
+#soc{}
+
+.home{
+  background-image: url('images/MK-wall.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+</style>
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,6 +65,10 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="css/custom2.css">
   <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Geostar' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Six+Caps' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Geostar+Fill' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Aguafina+Script' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 
   <!--<meta name=viewport content='width=661'>-->
@@ -48,15 +84,51 @@
 	   <li><a href="#home"><h3> Home </a></li>
 	   <li><a href="#about"><h3> About </a></li>
 	   <li><a href="#portfolio"><h3> Portfolio </a></li>
-       <li><a href="#contact"><h3> Contact </a></li>
+     <li id="contact"><a href="#contact"><h3> Contact </a></li>
     </div>
-    <div class="container">
+    
+    <div class="container home">
 	   <div class="jumbotron" style="height:100%;">
-	
+      <div class="col-lg-6 col-lg-offset-6">
+	   <h2> The Portfolio of Mary Kelly </h2>
+   </div>
       </div>
     </div>
-   <!--<a name="about"></a>
-    <div class="container gray">
+
+    <div class="test">
+      <h1> Contact Me! </h1>
+      <div class="row contact" style="padding: 0%; padding-top:1%"><h3> mkellydev@outlook.com </h3></div>
+      <div class= "row" style="padding-top: 0%; margin-left: -7%">
+         <div class="col-md-1 col-md-offset-4 icon">
+             <a href="https://github.com/marymkelly" target="_blank" title="Mary Kelly Github Account"><span class="fa fa-github fa-3x"></span></a>
+         </div>
+            <div class="col-md-1 icon">
+               <a href="http://codepen.io/marymkelly/" target="_blank" title="Mary Kelly Codepen Account"><span class="fa fa-codepen fa-3x"></span></a>
+           </div>
+            <div class="col-md-1 icon">
+               <a href="https://www.behance.net/mmkelly" target="_blank" title="Mary Kelly Behance Account"><span class="fa fa-behance fa-3x"></span></a>
+           </div>
+           <div class="col-md-1 icon">
+               <a href="https://twitter.com/mkellydev" target="_blank" title="Mary Kelly Twitter Account"><span class="fa fa-twitter fa-3x"></span></a>
+           </div>
+         <div class="col-md-1 icon">
+             <a href="http://www.linkedin.com/pub/mary-kelly/ab/b6/504/" target="_blank" title="Mary Kelly LinkedIn Account"><span class="fa fa-linkedin fa-3x"></span></a>
+         </div>
+       </div>
+    </div>
+
+    <div class="container" style="background-image:url('images/sochome.png'); padding:0%;">
+           <div class="container black-transparent"  id="soc">
+     <div class="jumbotron" style="height:100%;">
+      <h1 style="font-size:100px; padding-top: 13%;" > Student Opportunity Center </h1>
+      <h3> </h3> <br>
+        </div>
+    </div>
+    </div>
+
+
+   <a name="about"></a>
+   <!-- <div class="container gray">
         <h1 style="font-size:60px; margin-bottom: 4%"> About </h1>
        <div class="row" style="margin-bottom:3%" align="left">
             <div class="col-md-6"><h1 style="font-size:50px">Hello! I am 
@@ -151,29 +223,29 @@
         
         </div>
     </div>-->
-    <a name="contact"></a>
-    <div class="container dark-gray">
-        <h1 style="font-size:70px">Contact</h1>
+   <a name="contact"></a>
+    <div class="container" style="padding-top:3%">
+        <h1 style="font-size:60px">Contact</h1>
 	   <div class="scrolltop"><span class="glyphicon glyphicon-chevron-up"></div>
-	   <div class="contact"><h3> mkellydev@outlook.com </h3></div>
-	   <div class= "row" style="padding-top: 20px">
-	       <div class="col-md-2 col-md-offset-1 icon">
-	           <a href="https://github.com/marymkelly" target="_blank" title="Mary Kelly Github Account"><span class="fa fa-github fa-4x"></span></a>
+	   <div class="contact" style="padding: 0%; padding-top:1%"><h3> mkellydev@outlook.com </h3></div>
+	   <div class= "row" style="padding-top: 20px; margin-left: -7%;">
+	       <div class="col-md-1 col-md-offset-4 icon">
+	           <a href="https://github.com/marymkelly" target="_blank" title="Mary Kelly Github Account"><span class="fa fa-github fa-3x"></span></a>
 	       </div>
-            <div class="col-md-2 icon">
-               <a href="http://codepen.io/marymkelly/" target="_blank" title="Mary Kelly Codepen Account"><span class="fa fa-codepen fa-4x"></span></a>
+            <div class="col-md-1 icon">
+               <a href="http://codepen.io/marymkelly/" target="_blank" title="Mary Kelly Codepen Account"><span class="fa fa-codepen fa-3x"></span></a>
            </div>
-            <div class="col-md-2 icon">
-               <a href="https://www.behance.net/mmkelly" target="_blank" title="Mary Kelly Behance Account"><span class="fa fa-behance fa-4x"></span></a>
+            <div class="col-md-1 icon">
+               <a href="https://www.behance.net/mmkelly" target="_blank" title="Mary Kelly Behance Account"><span class="fa fa-behance fa-3x"></span></a>
            </div>
-           <div class="col-md-2 icon">
-               <a href="https://twitter.com/mkellydev" target="_blank" title="Mary Kelly Twitter Account"><span class="fa fa-twitter fa-4x"></span></a>
+           <div class="col-md-1 icon">
+               <a href="https://twitter.com/mkellydev" target="_blank" title="Mary Kelly Twitter Account"><span class="fa fa-twitter fa-3x"></span></a>
            </div>
-	       <div class="col-md-2 icon" style="margin-left:1%">
-	           <a href="http://www.linkedin.com/pub/mary-kelly/ab/b6/504/" target="_blank" title="Mary Kelly LinkedIn Account"><span class="fa fa-linkedin fa-4x"></span></a>
+	       <div class="col-md-1 icon">
+	           <a href="http://www.linkedin.com/pub/mary-kelly/ab/b6/504/" target="_blank" title="Mary Kelly LinkedIn Account"><span class="fa fa-linkedin fa-3x"></span></a>
 	       </div>
        </div>
-       <div class="copyright dark-gray" style="font-size:10px;"><span class="fa fa-copyright"></span>&nbsp;2015 Mary Kelly</div>
+       <div class="copyright" style="font-size:10px;"><span class="fa fa-copyright"></span>&nbsp;2015 Mary Kelly</div>
 	</div>
 </div>
 </body>
@@ -183,7 +255,7 @@
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/jquery-2.1.1.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
-<script src="js/index.js"></script>
+<!--<script src="js/index.js"></script>-->
 <script src="js/nav.js"></script>
 
 <script>
@@ -194,5 +266,48 @@
 
   ga('create', 'UA-59222277-1', 'auto');
   ga('send', 'pageview');
+
+</script>
+
+<script>
+
+(function(j){
+    var contact = $('.test');
+    var conclick = $('#contact');
+    var soc = $('#soc');
+
+//    conclick.click(function(){
+//        contact.fadeIn('slow');
+//    });
+
+    soc.hover(function(){
+        soc.remove('.black-transparent'); }, function(){
+        soc.add('.black-transparent');
+    })
+
+    $(window).scroll(function(){                         
+        if ($(this).scrollTop() > 100) {
+            arrowup.fadeIn(500);
+        } else {
+            arrowup.fadeOut(500);
+        }
+    });
+           
+    arrowup.click(function() {
+        if ($(window).scrollTop() == 0) {
+            $("html, body").animate({scrollTop:$(document).height()}, 500);
+        } else {
+            $("html, body").animate({scrollTop:0}, 500);
+        }
+    });
+
+    $('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+    }, 700);
+    return false;
+    });*/
+
+})(jQuery);
 
 </script>
