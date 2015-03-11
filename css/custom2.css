@@ -3,7 +3,7 @@ body{
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-attachment: fixed;*/
+	background-attachment: fixed;
 }
 
 h1, h4, h5, h6 {
@@ -15,7 +15,7 @@ h2{
 	/*font-family: 'Six Caps', sans-serif;*/
 	/*font-family: 'Aguafina Script', cursive;*/
 	font-size: 55px;
-	 text-shadow: 4px 4px 8px black, 4px 4px 5px #ff1a00;
+	/*text-shadow: 4px 4px 8px black, 4px 4px 5px #ff1a00;*/
 }
 
 h3{
@@ -26,7 +26,7 @@ h3{
 .wrapper{
 	height: auto;
 	width: 100%;
-	border: 10px solid;
+	border: 10px white solid;
 }
 
 
