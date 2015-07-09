@@ -25,7 +25,9 @@
 
 }
 
-#soc{}
+#soc{
+
+}
 
 .home{
   background-image: url('images/MK-graffiti-square.jpg');
@@ -40,6 +42,10 @@
   background-position: center;
   background-size: cover;
 
+}
+
+.te{
+  display: none;
 }
 
 </style>
@@ -102,8 +108,16 @@
       </div>
       <div class="col-lg-6 col-lg-offset-6" style="background-color:white; height:100%; color:black; position:fixed;">
 	       <h2> The Portfolio of Mary Kelly </h2>
-
-         <div class="contact" style="padding: 0%; padding-top:70%"><h3> mkellydev@outlook.com </h3></div>
+         <div style="padding-top:25%">
+          <h4> Hello! <br>
+               I am a front end web developer and novice graphic designer. <br>
+               Currently, I am employed by <a href="www.studentopportunitycenter.com">Student Opportunity Center</a><br>
+               I am available for freelance work. 
+         </div>
+        <div class="te">
+         <h2> Student Opportunity Center</h2>
+         </div>
+         <div class="contact" style="padding: 0%; padding-top:35%"><h3> mkellydev@outlook.com </h3></div>
             <div class= "row" style="padding-top: 20px; margin-left: -10%;">
               <div class="col-md-1 col-md-offset-4 icon">
                 <a href="https://github.com/marymkelly" target="_blank" title="Mary Kelly Github Account"><span class="fa fa-github fa-2x"></span></a>
@@ -125,7 +139,7 @@
       </div>
 
 
-        <div class="col-lg-6 soc" style="color:white; height:100%; padding:0px" id="soc">
+        <div class="col-lg-6 soc" style="color:white; height:100%; padding:0px">
           <div class="black-transparent" style="height:100%;">
 
           </div>
@@ -134,7 +148,7 @@
 
 
         </div>
-        <div class="col-lg-6" style="background-color:blue; color:white; height: 100%; padding:0px"> 
+        <div class="col-lg-6" style="background-color:yellow; color:black; height: 100%; padding:0px"> 
            <div class="black-transparent" style="height:100%;">
 
           </div>
@@ -167,8 +181,11 @@
 
 <script>
 
+
     $('.black-transparent').hover(function(){
-        $(this).animate({'opacity':0})}, function(){
+        $(this).animate({'opacity':0})
+        //$('.te').show('slow');
+      }, function(){
           $(this).animate({'opacity':.7})
       });
 
